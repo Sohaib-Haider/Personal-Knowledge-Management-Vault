@@ -10,6 +10,7 @@ pkm/
 ├── Research/    # Research workspaces with data, logs, citations
 ├── Projects/    # Active/done project workspaces with tasks & milestones
 ├── Ideas/       # Idea workspaces, from seed to evergreen
+├── Data/        # Data workspaces: data files (csv/json/...) + explanatory notes
 ├── Templates/   # Markdown scaffolds for each section
 └── README.md
 ```
