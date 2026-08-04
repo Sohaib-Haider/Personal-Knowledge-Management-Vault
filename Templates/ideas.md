@@ -3,18 +3,16 @@ title: ""
 date: "{{date}}"
 author: ""
 last_audited: "{{date}}"
-mood: ""
-related: []
 tags: []
-status: evergreen # seed | sprouting | evergreen
+status: seed # seed | sprouting | evergreen
 sources: []
 references: []
 ---
 
 <!--
- Idea scaffold: captures a raw idea and grows it into a full workspace.
+Idea scaffold: captures a raw idea and grows it into a full workspace.
 Attach supporting sketches/links in this folder; don't cram everything
-into a single file.
+into a single file. Link related workspaces via `references`.
 -->
 
 ## The Idea

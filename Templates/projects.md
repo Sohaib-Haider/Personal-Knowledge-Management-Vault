@@ -3,10 +3,6 @@ title: ""
 date: "{{date}}"
 author: ""
 last_audited: "{{date}}"
-deadline: ""
-priority: medium # low | medium | high | urgent
-lead: ""
-milestones: []
 tags: []
 status: planning # planning | active | done | archived
 sources: []
@@ -14,8 +10,9 @@ references: []
 ---
 
 <!--
- Project template: scaffolds a project workspace. Keep related files—docs,
-(#design, specs, assets—alongside this file in the same workspace.
+Project template: scaffolds a project workspace. Keep related files—docs,
+design, specs, assets—alongside this file in the same workspace.
+Link related workspaces via `references`.
 -->
 
 ## Objective
@@ -29,7 +26,7 @@ references: []
 
 ## Milestones
 
-<!-- List significant checkpoints (aligned with `milestones` frontmatter). -->
+<!-- List significant checkpoints. -->
 
 ## Notes / Log
 

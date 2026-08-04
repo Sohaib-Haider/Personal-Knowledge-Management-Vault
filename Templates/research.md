@@ -3,8 +3,6 @@ title: ""
 date: "{{date}}"
 author: ""
 last_audited: "{{date}}"
-lead: ""
-findings: ""
 tags: []
 status: active # active | on-hold | completed
 sources: []
@@ -14,6 +12,7 @@ references: []
 <!--
 Research template: scaffolds a Research workspace. Keep related data,
 notebooks, and citations as sibling files in the same workspace.
+Link related workspaces via `references`.
 -->
 
 ## Question

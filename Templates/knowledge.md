@@ -1,9 +1,8 @@
 ---
-title:
+title: ""
 date: "{{date}}"
 author: ""
 last_audited: "{{date}}"
-aliases: []
 tags: []
 status: fleeting # fleeting | literature | permanent
 sources: []
@@ -14,6 +13,7 @@ references: []
 This template scaffolds a Knowledge workspace. A workspace is a directory
 holding THIS note plus any supporting files (diagrams, data, assets).
 Rename this file to describe the topic, e.g. `Spaced-Repetition.md`.
+Link related workspaces via `references`.
 -->
 
 ## Summary

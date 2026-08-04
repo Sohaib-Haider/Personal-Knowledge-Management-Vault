@@ -3,11 +3,6 @@ title: ""
 date: "{{date}}"
 author: ""
 last_audited: "{{date}}"
-dataset_name: ""
-format: "" # csv | json | parquet | external
-origin: "" # kaggle | huggingface | api | manual | other
-license: ""
-files: [] # local data files in this workspace
 tags: []
 status: seed # seed | curated | deprecated
 sources: []
@@ -18,7 +13,7 @@ references: []
 Data template: scaffolds a Data workspace. A Data workspace holds real
 data files (csv/json/parquet/...) AND/OR this note linking to external
 datasets (Kaggle, HuggingFace, APIs, ...). This note explains the data.
-Other workspaces may link here for reference.
+Other workspaces may link here for reference via `references`.
 -->
 
 ## Description
