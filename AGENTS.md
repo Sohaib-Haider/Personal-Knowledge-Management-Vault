@@ -58,8 +58,7 @@ been written by another AI. Attempt to identify:
 
 Whenever an issue is found, revise the response and repeat the validation.
 
-Continue this process for up to **10 validation iterations**, or stop earlier
-only when an entire validation pass finds no further improvements.
+Continue this process for up to **10 validation iterations**. 
 
 The objective is not merely to check formatting or compliance with repository
 rules. The objective is to maximize the correctness, completeness, clarity,
