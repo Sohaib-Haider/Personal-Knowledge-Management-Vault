@@ -24,6 +24,9 @@ pkm/
 └── README.md           # human-facing description
 ```
 
+A workspace is a directory per topic: `<Section>/<topic>/<topic>.md` holds the
+main note; supporting files (diagrams, data, sub-notes) sit alongside it.
+
 For human-readable detail (frontmatter fields, status legends), read
 `README.md`. This file only states the rules an AI must follow here.
 
@@ -33,6 +36,16 @@ For human-readable detail (frontmatter fields, status legends), read
 - Distinguish stated facts from inference; flag uncertainty explicitly.
 - Prefer accuracy over completeness — omit rather than fabricate.
 - If you cannot verify something, say so and ask instead of guessing.
+
+## Tool Use Rules
+
+- Use the **AskQuestion tool** whenever information is missing, ambiguous, or a
+  decision could change the outcome — never substitute assumptions.
+- Never write vault content directly; delegate every writing task to the
+  built-in `task` tool (GeneralTask) with the handoff contract below.
+- Ask before destructive or large structural changes.
+- Ask via the **AskQuestion tool** before finalizing any response or repository
+  change when a decision could change the outcome.
 
 ## Auto Validation Policy
 
@@ -81,7 +94,36 @@ Never assume the first generated answer is the best answer.
 - Before creating or editing a file, open and mirror the matching template in
   `Templates/` — it defines the frontmatter fields, section layout, and
   `status` enum for that workspace.
+- Scaffold step: copy `Templates/<section>.md` to
+  `<Section>/<topic>/<topic>.md` and fill it in.
 - Preserve the required frontmatter exactly as the template specifies.
+
+## Drafting — GeneralTask Contract
+
+Every draft, revision, and fix is written by delegating to the built-in
+`task` tool (GeneralTask) — the orchestrator never writes it directly. Handoff
+contract passed to the tool: document path, section template, initial status,
+and required metadata fields (title, date, author, tags, sources, references).
+GeneralTask is responsible for revisions after every review cycle.
+
+## Epic / Subtask Review Pipeline
+
+For every epic and every subtask:
+
+1. **Draft** — invoke the `task` tool (GeneralTask) with the handoff contract
+   above.
+2. **Review** — each cycle, launch fresh review subagents against the current
+   draft:
+   - `@kb-editor`
+   - `@kb-tech-lead`
+   - `@kb-architect`
+   Reviews are fresh every cycle: reviewers always see the current copy and
+   never carry context from a previous cycle.
+3. **Revise** — send all findings back to GeneralTask for rewrite; repeat.
+   Maximum **10 cycles**.
+4. **Escalate** — stop the loop and use the **AskQuestion tool** when
+   reviewers conflict, the same issue recurs across cycles, or adjudication is
+   needed.
 
 ## Knowledge Linking
 
@@ -89,11 +131,10 @@ Never assume the first generated answer is the best answer.
 - Ensure references resolve to existing workspaces.
 - Update references when a linked note changes.
 
-## Ask Before You Act
+## Git Conventions
 
-- Ask when information is missing or ambiguous.
-- Ask before destructive or large structural changes.
-- Never replace uncertainty with assumptions.
+- Git commits and pushes are handled manually by the user — never run git
+  yourself and never commit on your own.
 
 ## Absolute Guardrails
 
@@ -101,4 +142,5 @@ Never assume the first generated answer is the best answer.
   sub-files inside the workspace and link them.
 - **Discoverability & auditability** — keep `date`, `last_audited`,
   `Changelog`, and accurate `references`; commit per workspace.
-- **No guessing** — when a decision could change the outcome, ask me.
+- **No guessing** — when a decision could change the outcome, ask via the
+  AskQuestion tool.
