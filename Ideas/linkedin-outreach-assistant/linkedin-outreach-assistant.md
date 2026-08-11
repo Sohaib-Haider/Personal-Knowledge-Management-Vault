@@ -4,9 +4,9 @@ date: "2026-08-09"
 author: ""
 last_audited: "2026-08-09"
 tags: ["linkedin", "outreach", "saas", "compliance", "b2b"]
-status: seed # seed | sprouting | evergreen
+status: sprouting # seed | sprouting | evergreen
 sources: []
-references: []
+references: ["Research/linkedin-outreach-policy", "Research/linkedin-outreach-competitive"]
 ---
 
 <!--
@@ -21,15 +21,17 @@ A LinkedIn outreach campaign-builder SaaS, positioned as a **compliance-first
 assistant** rather than a gray-zone automation bot.
 
 The core tension must be stated honestly. LinkedIn's User Agreement broadly
-prohibits third-party automated tools (unverified), and whether LinkedIn
-publishes official numeric operating limits is unverified. Account detection
+prohibits third-party automated tools (verified — see [[Research/linkedin-outreach-policy]]),
+and LinkedIn publishes no official numeric operating limits (verified — see
+[[Research/linkedin-outreach-policy]]). Account detection
 is the central risk: activity that LinkedIn flags can escalate to warnings,
 restricted access, or account bans (as reported; to be verified).
 Human-in-the-loop review and conservative cadence may reduce — but do not
 eliminate — that risk. "Compliance-first" is therefore a relative positioning
 (a safety-first operating philosophy), not an absolute guarantee. LinkedIn's
-exact policy language and any community-observed limits are unverified and must
-be researched before anything in this note is treated as fact.
+exact policy language is verified in [[Research/linkedin-outreach-policy]],
+but community-observed thresholds remain unverified and must be researched
+before anything in this note is treated as fact.
 
 The product would guide users through structured outreach — connection
 requests plus follow-up messages — at a conservative cadence, with an approval
@@ -72,11 +74,11 @@ completeness._
 
 ## Next Steps
 
-- [ ] Verify LinkedIn's actual automation policy and operating limits —
+- [x] Verify LinkedIn's actual automation policy and operating limits —
       confirm whether any official numeric caps exist and, separately, what
       community-observed thresholds are. Treat community numbers as
       unverified; do not state any as fact.
-- [ ] Competitive teardown of existing tools (Expandi, Dripify, Smartlead,
+- [x] Competitive teardown of existing tools (Expandi, Dripify, Smartlead,
       plus any others discovered). Note each tool's channel overlap:
       email-first vs LinkedIn-native. Analyze, do not copy.
 - [ ] Buyer interviews: individual sellers/founders and agencies — pain
@@ -97,3 +99,6 @@ now.
 
 - 2026-08-09 — Created.
 - 2026-08-09 — Revised after review (risk framing, unverified-limits hedging, positioning as hypothesis).
+- 2026-08-09 — Promoted to sprouting; policy & limits research complete ([[Research/linkedin-outreach-policy]]).
+- 2026-08-09 — Hedges updated: policy claims now cite [[Research/linkedin-outreach-policy]].
+- 2026-08-09 — Competitive teardown complete ([[Research/linkedin-outreach-competitive]]).
