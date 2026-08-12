@@ -2,7 +2,7 @@
 title: "Connection & Invitation Limits (Official + Community)"
 date: 2026-08-09
 author: ""
-last_audited: 2026-08-09
+last_audited: 2026-08-12
 tags: ["linkedin","research","limits","invitations"]
 status: completed
 sources:
@@ -12,6 +12,7 @@ sources:
   - https://we-connect.io/blog/linkedin-limits-2026-complete-guide
   - https://linkedapi.io/guides/linkedin-connection-limit-2026
   - https://phantombuster.com/blog/linkedin-automation/linkedin-limit-reset-schedule/
+  - https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted
 references: ["Research/linkedin-outreach-policy/linkedin-outreach-policy.md"]
 ---
 
@@ -55,8 +56,14 @@ equivalent numbers. Treat as heuristics only.
 - Acceptance rate is the main lever: below ~30% signals spam and throttles volume (Taplio); above ~40% supports higher limits (LinkedAPI). (community-observed, unverified)
 - Connection-note length: 300 characters (some sources report 200 for free accounts). (community-observed, unverified: [Taplio](https://taplio.com/blog/linkedin-connection-request-limit) 300; [We-Connect](https://we-connect.io/blog/linkedin-limits-2026-complete-guide) 200 free / 300 paid)
 - Personalized notes on free accounts: ~5/month — matches the official a550555 number. (community-observed, unverified: [Taplio](https://taplio.com/blog/linkedin-connection-request-limit); consistent with official [a550555](https://www.linkedin.com/help/linkedin/answer/a550555))
+- Weekly safe ranges converge on a gradient matching the existing reputation tiers: new accounts about 50 per week, established about 100 per week, high-trust up to about 200 per week (200 treated as the aggressive end). (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Baseline-deviation trigger and ramp: warm up new or dormant accounts 3 to 4 weeks before outreach; start at 5 to 10 invites per day, then increase roughly 10 to 20 percent per week measured against your own prior week; sudden spikes after quiet periods flag even safe volumes. (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Acceptance rate: healthy about 30-45 percent, danger below about 20-30 percent; average about 37 percent across a 16,492-invitation single-platform sample (Botdog, 2025); 63 percent of accepts land within a day and 88 percent within a week, so first-week response is an early targeting signal. (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Sales Navigator does not raise the invite cap; it returns up to 2,500 lead results per search (Sales Navigator Help, 2026), so pay for better targeting, not more volume. (vendor-documented, citing Sales Navigator Help (2026) via the [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Pending invitations: keep under roughly 500; withdraw stale pending invites after a few weeks, since outstanding requests are an official trigger. (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
 
 ## Changelog
 
 - 2026-08-09 — Created.
 - 2026-08-09 — Inline official source URLs added.
+- 2026-08-12 — Added Prosp.ai vendor-documented community observations.

@@ -8,6 +8,8 @@ status: completed
 sources:
   - https://www.linkedin.com/help/linkedin/answer/a543695/inmail-message-credits-and-renewal-process
   - https://www.linkedin.com/help/sales-navigator/answer/a101030
+  - https://www.linkedin.com/help/linkedin/answer/a550555
+  - https://www.linkedin.com/help/linkedin/answer/a551012
   - https://we-connect.io/blog/linkedin-limits-2026-complete-guide
   - https://phantombuster.com/blog/linkedin-automation/linkedin-limit-reset-schedule/
 references: ["Research/linkedin-outreach-policy/linkedin-outreach-policy.md"]

@@ -2,7 +2,7 @@
 title: "LinkedIn Automation Policy & Send Limits"
 date: 2026-08-09
 author: ""
-last_audited: 2026-08-09
+last_audited: 2026-08-12
 tags: ["linkedin","research","compliance","outreach","policy"]
 status: completed
 sources:
@@ -18,6 +18,7 @@ sources:
   - https://we-connect.io/blog/linkedin-limits-2026-complete-guide
   - https://linkedapi.io/guides/linkedin-connection-limit-2026
   - https://phantombuster.com/blog/linkedin-automation/linkedin-limit-reset-schedule/
+  - https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted
 references: ["Ideas/linkedin-outreach-assistant"]
 ---
 
@@ -67,7 +68,11 @@ Premium/InMail credits to be the one area with official published numbers.
 
 ### Community-observed (UNVERIFIED — not official facts)
 
-- Sub-notes hold the detail: [[connection-request-limits]] and [[messaging-limits]].
+- Sub-notes hold the detail: [[connection-request-limits]], [[messaging-limits]], and [[ban-prevention-playbook]].
+- Deviation from an account's own baseline, not absolute volume, is the sharper trigger: a sharp spike after a quiet period flags the account even when volumes sit under safe counts; ramp gradually off your own baseline. (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Acceptance rate is a core throttle: healthy band roughly 30-45 percent, danger below about 20-30 percent; average acceptance about 37 percent in a 16,492-invitation single-platform sample (Botdog, 2025), with 63 percent of accepts landing within a day and 88 percent within a week. (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Sales Navigator does NOT raise the connection-invite cap; paid tiers widen targeting only (up to 2,500 lead results per search, Sales Navigator Help 2026), while the cap stays tied to account behavior. (vendor-documented, citing Sales Navigator Help (2026) via the [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
+- Infrastructure flagging: in 2025 LinkedIn cracked down on automation services (a cease-and-desist to at least one major cloud-based outreach tool and API-access cutoffs); multiple accounts sharing one IP reads as an automation service, so a dedicated residential proxy per account is the recommended mitigation, described by the source as a signal reducer and not a guarantee. (community-observed, unverified: [Prosp blog](https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted))
 - Consensus across Taplio, We-Connect, LinkedAPI, PhantomBuster: no official fixed number; "around 100/week" baseline; rolling 7-day reset (not calendar); new accounts ~50-80/week; trusted accounts up to ~200/week; safe daily pacing — see connection-request-limits.md for tiered daily pacing; pending-invitation guidance: keep under ~400-500; restrictions commonly reported around ~700; warnings above ~1,500. (community-observed, unverified: [Taplio blog](https://taplio.com/blog/linkedin-connection-request-limit); [We-Connect blog](https://we-connect.io/blog/linkedin-limits-2026-complete-guide); [LinkedAPI](https://linkedapi.io/guides/linkedin-connection-limit-2026); [PhantomBuster blog](https://phantombuster.com/blog/linkedin-automation/linkedin-limit-reset-schedule/))
 
 ### Hypothesis vs outcome
@@ -90,11 +95,12 @@ Official (all fetched live 2026-08-09):
 - InMail message credits and renewal process — https://www.linkedin.com/help/linkedin/answer/a543695/inmail-message-credits-and-renewal-process
 - Understand InMail credits in Sales Navigator — https://www.linkedin.com/help/sales-navigator/answer/a101030
 
-Community (all fetched live 2026-08-09, UNVERIFIED):
+Community (Taplio/We-Connect/LinkedAPI/PhantomBuster fetched live 2026-08-09, Prosp fetched live 2026-08-12, UNVERIFIED):
 - Taplio blog — https://taplio.com/blog/linkedin-connection-request-limit
 - We-Connect blog — https://we-connect.io/blog/linkedin-limits-2026-complete-guide
 - LinkedAPI guide — https://linkedapi.io/guides/linkedin-connection-limit-2026
 - PhantomBuster blog — https://phantombuster.com/blog/linkedin-automation/linkedin-limit-reset-schedule/
+- Prosp blog — https://www.prosp.ai/blog/linkedin-outreach-without-getting-restricted
 
 ## Changelog
 
@@ -102,3 +108,5 @@ Community (all fetched live 2026-08-09, UNVERIFIED):
 - 2026-08-09 — Initial live research complete.
 - 2026-08-09 — Completed: official policy verified against live sources; community thresholds labeled unverified.
 - 2026-08-09 — Inline official source URLs added.
+- 2026-08-12 — Added vendor-documented LinkedIn limits from the Prosp.ai blog to the community section.
+- 2026-08-12 — Added ban-prevention playbook sub-note; detection, infrastructure, and recovery guidance now covered per vendor documentation.
